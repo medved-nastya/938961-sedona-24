@@ -40,27 +40,24 @@
         <button class="hotel-search-button" type="button">
         Поиск гостиницы в Седоне
         </button>
-        <form method="post" class="hotel-search-form" action="https://echo.htmlacademy.ru" 
+        <form method="get" class="hotel-search-form" action="https://echo.htmlacademy.ru" 
           oninput="range-adults.value=range-adults-output.value">
-          <p class="arrival-date"> 
+          <div> class="arrival-date"> 
             <label for="arrival-date-input">Дата заезда:</label>
             <input type="text" name="date" id="arrival-date-input" placeholder="24 апреля 2017">
-          </p>
-          <p class="departure-date"> 
+          </div>
+          <div class="departure-date"> 
             <label for="departure-date-input"> Дата выезда:</label>
             <input type="text" id="departure-date-input" name="departure" placeholder="4 июля 2017">
-          </p>
-          <p class="adults"> 
+          </div>
+          <div class="people-number"> 
             <label for="range-adults"> Взрослые: </label>
             1<input type="range" id="range-adults" name="range-adults" min="1" max="100" step="1">100
             <output name="range-adults-output">2</output>
-          </p>
-          <p class="children">
             <label for="range-children">Дети: </label>
             0<input type="range" id="range-children" name="range-children" min="0" max="100" step="1">100
             <output name="range-adults-output">0</output>
-            
-          </p>
+          </div>              
           <button class="button" type="submit">Найти</button>
         </form>
         <!-- Место для карты -->
